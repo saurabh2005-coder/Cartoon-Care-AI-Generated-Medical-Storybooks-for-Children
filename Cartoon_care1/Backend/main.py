@@ -23,7 +23,7 @@ class StoryRequest(BaseModel):
 
 
 # ⚠️ IMPORTANT: Regenerate your HF token after this
-HF_TOKEN = "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"
+HF_TOKEN = ""
 
 
 # ---------------------------
@@ -100,3 +100,4 @@ def generate_storybook(request: StoryRequest):
         "story": story,
         "image": image_path
     }
+
