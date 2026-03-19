@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&family=Nunito:wght@400;700&display=swap');
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #2c3e50; /* A nice dark blue/grey background to make the book pop */
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* --- Container Centering --- */
+.app-container.centered {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- Form Styles --- */
+.form-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label { font-weight: bold; margin-bottom: 5px; }
+.input-group input { padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+
+.generate-btn {
+  width: 100%;
+  padding: 12px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.generate-btn:hover { background: #c0392b; }
+
+/* --- FLIPBOOK STYLES --- */
+.my-flipbook {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Drops a shadow behind the whole book */
+}
+
+.page {
+  background-color: #fdfbf7; /* Off-white paper color */
+  border-left: 1px solid rgba(0,0,0,0.1); /* Subtle page fold line */
+  overflow: hidden;
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* --- Image Pages (Left Side) --- */
+.image-page .image-content {
+  padding: 30px; 
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfbf7;
+}
+
+.image-page img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the image isn't cropped or stretched */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Text Pages (Right Side) --- */
+.text-page .text-content {
+  padding: 40px 30px;
+  position: relative;
+  background-color: #fdfbf7;
+}
+
+.story-text {
+  font-family: 'Merriweather', serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #222;
+  text-align: left;
+}
+
+.page-number {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  color: #999;
+}
+
+/* --- Covers --- */
+.page-cover { background-color: #e74c3c; color: white; }
+.front-cover-bg { background: linear-gradient(135deg, #ff7675, #d63031); }
+.back-cover-bg { background: linear-gradient(135deg, #d63031, #ff7675); }
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.page-cover h2 { font-size: 2.2rem; margin-bottom: 10px; font-family: 'Nunito', sans-serif; }
+.subtitle { font-size: 1.2rem; opacity: 0.9; }
+.swipe-hint { margin-top: 40px; font-size: 0.9rem; font-style: italic; opacity: 0.8; }
+
+.reset-btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: white;
+  color: #e74c3c;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
