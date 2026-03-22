@@ -1,0 +1,13 @@
+/*
+  index.css — Global styles
+
+  This single line imports ALL of Tailwind CSS.
+  Tailwind gives us utility classes like:
+    - bg-blue-500  (blue background)
+    - text-white   (white text)
+    - p-4          (padding of 1rem)
+    - rounded-xl   (rounded corners)
+  
+  We use these classes directly in our JSX instead of writing custom CSS.
+*/
+@import "tailwindcss";
