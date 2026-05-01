@@ -1,0 +1,62 @@
+# ═══════════════════════════════════════════════════════════════
+# ROOT .gitignore - Cartoon Care Project
+# ═══════════════════════════════════════════════════════════════
+
+# ── Documentation files (keep only final report) ─────────────────
+*.md.backup
+*_BACKUP.md
+*_OLD.md
+*_Part*.md
+NOTES.md
+TODO.md
+TEMP*.md
+BEFORE_AFTER_COMPARISON.md
+CHANGES_OVERVIEW.md
+ELEVENLABS_SETUP_GUIDE.md
+EMOJI_REMOVAL_SUMMARY.md
+FIXES_COMPLETE.md
+HINDI_STORYBOOK_FIXES.md
+PDF_HINDI_FIX.md
+PDF_OPTIMIZATION_SUMMARY.md
+PDF_SIZE_OPTIMIZATION.md
+QUICK_REFERENCE.md
+QUICK_START_TTS.md
+READ_ALOUD_FEATURE_SUMMARY.md
+REPORT_GENERATION_COMPLETE.md
+TEST_HINDI_PDF.md
+TESTING_GUIDE.md
+TTS_INTEGRATION_SUMMARY.txt
+WORD_DOCUMENT_GUIDE.md
+
+# ── Report generation files ───────────────────────────────────────
+generate_report*.py
+Final_Project_Report_CartoonCare_Part*.md
+Final_Project_Report_CartoonCare.md
+
+# ── Temporary Word documents ──────────────────────────────────────
+~$*.docx
+*.tmp
+Cartoon_Care_Complete_Report.docx
+final_report.docx
+
+# ── IDE and system files ──────────────────────────────────────────
+.vscode/
+.idea/
+.kiro/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Python cache ──────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ── Logs ──────────────────────────────────────────────────────────
+*.log
+
+# ── Keep these files ──────────────────────────────────────────────
+!README.md
+!Cartoon_Care_Final_Report.docx
+!.gitignore

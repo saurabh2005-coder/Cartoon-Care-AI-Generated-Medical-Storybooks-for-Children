@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+/* ── Custom font ─────────────────────────────────────────────── */
+@font-face {
+  font-family: 'LittleMonster';
+  src: url('/little-monster-2-font/LittleMonster-YzLdo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Design tokens ───────────────────────────────────────────── */
+:root {
+  --color-primary:    #2EC4B6;   /* Soft teal  */
+  --color-primary-dk: #25a99d;   /* Teal hover */
+  --color-secondary:  #FF9F1C;   /* Warm orange */
+  --color-accent:     #4CAF50;   /* Soft green  */
+  --color-bg:         #F8FAFC;   /* Off-white   */
+  --color-text:       #1E293B;   /* Dark slate  */
+  --color-muted:      #64748B;   /* Light gray  */
+}
+
+/* ── Global base ─────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ── Smooth scroll ───────────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+/* ── Fade-in animation ───────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-fade-up   { animation: fadeUp 0.5s ease forwards; }
+.animate-fade-in   { animation: fadeIn 0.4s ease forwards; }
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+
+/* ── Custom scrollbar ────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 3px; }
+
+/* ── Teal utility classes (Tailwind v4 custom colors) ────────── */
+.bg-teal-brand        { background-color: var(--color-primary); }
+.bg-teal-brand-dark   { background-color: var(--color-primary-dk); }
+.text-teal-brand      { color: var(--color-primary); }
+.border-teal-brand    { border-color: var(--color-primary); }
+.ring-teal-brand      { --tw-ring-color: var(--color-primary); }
+.bg-orange-brand      { background-color: var(--color-secondary); }
+.text-orange-brand    { color: var(--color-secondary); }
+.bg-green-brand       { background-color: var(--color-accent); }
+.text-green-brand     { color: var(--color-accent); }
+.bg-teal-50-brand     { background-color: #e6faf9; }
+.text-slate-brand     { color: var(--color-text); }
+.text-muted-brand     { color: var(--color-muted); }
